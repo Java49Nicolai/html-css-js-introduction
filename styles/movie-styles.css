@@ -1,0 +1,58 @@
+.logo {
+    font-size: 2em;
+    font-family: Georgia, serif;
+    display: block; text-align: center;
+    color: #ffff00;
+    font-weight: bold;
+    
+    
+}
+.main-class {
+    display: block;
+
+}
+.details-container {
+    
+
+}
+.details-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    
+
+}
+.details-title {
+    display: block; text-align: center;
+    font-size: 1.5em;
+    font-family: Georgia, serif;
+    color: whitesmoke;
+
+}
+.thumbnails-list {
+    list-style: none;
+
+}
+.thumbnails-item {
+
+}
+.thumbnails-anchor {
+    
+
+}
+.thumbnails-image {
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.thumbnails-title {
+    display: block; text-align: center;
+    font-size: 1.5em;
+    font-family: Georgia, serif;
+    color: indigo;
+    font-weight: bold;
+    
+}
