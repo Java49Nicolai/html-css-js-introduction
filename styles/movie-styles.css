@@ -1,48 +1,42 @@
 body {
-    display: flex;
+    display: flex; 
     flex-direction: column;
-    background-color: darkgrey;
-}
-.logo {
+    background-color: darkgray;
+ }
+ .logo  {
     font-size: 2em;
     color: black;
     font-weight: bold;
     background-color: cadetblue;
     text-align: center;
     display: block;
-    
-    
-}
-.main-class {
+ 
+ }
+ .main-class {
     display: block;
-
-}
-.details-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2.5vh;
-
-    
-
-}
-.details-image {
-width: 50vw;
-height: 70vw;
-border-radius: 25%;
-border: solid 1px black;
-    
-
-}
-.details-title {
+ 
+ }
+ .details-container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 2.5vh;
+ 
+ }
+ .details-image {
+    width: 50vw;
+    height: 70vw;
+    border-radius: 25%;
+    border: solid 1px black;
+ }
+ .details-title {
     display: block; text-align: center;
     font-size: 1.5em;
     font-family: Georgia, serif;
     color: red;
-    
-
-}
-.thumbnails-list {
+ 
+ }
+ .thumbnails-list {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -51,9 +45,8 @@ border: solid 1px black;
     overflow-y: auto;
     justify-content: space-around;
     padding-left: 0%;
-
-}
-.thumbnails-item {
+ }
+ .thumbnails-item {
     overflow: hidden;
     width: 20vw;
     height: 20vw;
@@ -61,33 +54,20 @@ border: solid 1px black;
     padding: 0;
     border-radius: 25%;
     border: solid 1px black;
-    
-    
-    
-    
-
-}
-.thumbnails-anchor {
-    text-decoration: none;
-    
-
-}
-.thumbnails-image {
+ }
+ .thumbnails-image {
    width: 20vw;
-   height: 30vw;
+   height: 15vw;
    display: block;
    padding: 0;
-   
-   
 
-   
-
-}
-.thumbnails-title {
-    display: block; 
-    text-align: center;
-    height: 5vw;
-    background-color: black;
-    font-weight: bold;
-    
-}
+ }
+ .thumbnails-title {
+     display: block; 
+     text-align: center;
+     height: 5vw;
+     background-color: black;
+ }
+ .thumbnails-anchor {
+    text-decoration: none;
+ }
