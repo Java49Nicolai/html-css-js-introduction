@@ -14,20 +14,21 @@ body, html {
 body {
   display: flex; 
   flex-direction: column;
-  background-color: azure;
+  background-color: rgb(9, 86, 138);
   margin: 0;
   
 }
 .logo  {
 font-size: 2em;
-color: black;
+color: rgb(255, 255, 255);
 font-weight: bold;
-background-color: bisque;
+background-color: rgb(255, 255, 255);
 display: block;
 text-align: center;
 font-family: lakeshore;
 text-transform: uppercase;
 letter-spacing: 15px;
+text-shadow: 1px 1px 2px black, 0 0 25px rgb(6, 91, 202), 0 0 5px rgb(4, 50, 102);
 
 }
 .main-class {
@@ -50,12 +51,13 @@ flex-grow: 1;
    height: 85vw;
    border-radius: 25%;
    border: solid 1px black;
+   box-shadow: 0 20px 15px 0 black;
 }
 .details-title {
 display: block;
 font-size: 1.5em;
 font-family: Georgia, serif;
-color: red;
+color: rgb(255, 255, 255);
 
 }
 .thumbnails-list {
@@ -68,6 +70,7 @@ overflow-y: auto;
 justify-content: space-around;
 padding-left: 0;
 
+
 }
 .thumbnails-item {
 max-width: var(--thumbnails-img-width);
@@ -76,6 +79,8 @@ margin-top: 2.5vh;
 border: solid 1px black;
 border-radius: 25%;
 overflow: hidden;
+box-shadow: 0 6px 6px 0 black;
+margin-left: 1vw;
 }
 .thumbnails-image {
    width: var(--thumbnails-img-width);
@@ -86,12 +91,22 @@ overflow: hidden;
    display: block; 
    text-align: center;
    height: var(--thumbnails-title-height);
-   background-color: beige;
+   background-color: rgb(255, 255, 255);
 }
 .thumbnails-anchor {
   text-decoration: none;
 }
 @media (min-width: 560px) {
+     :root {
+      --thumbnails-img-width: 10vw;
+      --thumbnails-img-height: 8vw;
+      --thumbnails-title-height: calc(var(--thumbnails-img-height) * 0.30)
+     }
+
+     .logo {
+      font-size: 1.8em;
+     }
+
    .thumbnails-list {
        flex-direction: column;
        flex-wrap: nowrap;
@@ -107,19 +122,31 @@ overflow: hidden;
    .details-image {
        width: 26vw;
        height: 32vw;
-       margin-top: 8vh;
+       
 
    }
    .details-container {
-      height: 70vh;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 0;
    }
+   @media (min-width: 900px) {
+      .thumbnails-list {
+         padding-right: 2vw;
+         margin-top: 2.5vh;
+         max-height: 86vh;
 
-   .thumbnails-image {
-      max-width: 10vw;
-
-   }
-   .thumbnails-item {
-      min-height: 10vw;
+      }
+      .thumbnails-title {
+         font-size: 1.5em;
+      }
+      .details-container {
+         margin-top: 5vh;
+         margin-right: 5vw;
+      }
+      .details-title {
+         font-size: 1.5em;
+      }
    }
    
 }
