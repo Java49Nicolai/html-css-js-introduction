@@ -107,6 +107,9 @@ body {
     height: var(--thumbnails-img-height);
     display: block;
 }
+.details-frame {
+   position: relative;
+}
 
 .thumbnails-title {
     display: block;
@@ -182,7 +185,8 @@ body {
 
         .details-title {
             font-size: 1.5em;
-            bottom: 9vw
+            bottom: 0vw;
+            left: 6.5vw;
         }
 
         .details-image {
