@@ -1,0 +1,53 @@
+:root {
+    --cell-width: 8vw;
+    --cell-height: 8vw;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.board-row {
+    display: flex;
+    border: solid 1px black;
+
+}
+
+.board {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.white-cell {
+    display: inline-block;
+    background-color: white;
+    width: var(--cell-width);
+    height: var(--cell-height);
+}
+
+.black-cell {
+    display: inline-block;
+    background-color: black;
+    width: var(--cell-width);
+    height: var(--cell-height);
+
+}
+
+@media ( min-width: 560px) {
+    :root {
+        --cell-width: 4vw;
+        --cell-height: 4vw;
+    }
+@media ( min-width: 900px) {
+    :root {
+        --cell-width: 4vw;
+        --cell-height: 4vw;
+    }
+}
+}
