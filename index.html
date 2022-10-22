@@ -13,9 +13,10 @@
     <header class="logo">
         Movie TOP
     </header>
-    <main class="main-class">
+    <main class="main-class hidden">
         <section class="details-container">
             <div class="details-frame">
+                <button class="hide-button" onclick="hideDetails()">Hide</button>
                 <img src="images/background2.jpg" class="details-image">
                 <span class="details-title">Movie TOP</span>
             </div>
@@ -24,7 +25,7 @@
         <ul class="thumbnails-list">
             <li class="thumbnails-item">
                 <a href="#" class="thumbnails-anchor" data-details-image="images/movie1.jpg"
-                data-details-title="The Shawshank Redemption">
+                    data-details-title="The Shawshank Redemption">
                     <img src="images/movie1.jpg" class="thumbnails-image">
                     <span class="thumbnails-title">Top #1</span>
 
@@ -32,7 +33,7 @@
             </li>
             <li class="thumbnails-item">
                 <a href="#" class="thumbnails-anchor" data-details-image="images/movie2.jpg"
-                data-details-title="The Godfather">
+                    data-details-title="The Godfather">
                     <img src="images/movie2.jpg" class="thumbnails-image">
                     <span class="thumbnails-title">Top #2</span>
 
@@ -40,7 +41,7 @@
             </li>
             <li class="thumbnails-item">
                 <a href="#" class="thumbnails-anchor" data-details-image="images/movie3.jpg"
-                data-details-title="The Dark Knight">
+                    data-details-title="The Dark Knight">
                     <img src="images/movie3.jpg" class="thumbnails-image">
                     <span class="thumbnails-title">Top #3</span>
 
@@ -48,7 +49,7 @@
             </li>
             <li class="thumbnails-item">
                 <a href="#" class="thumbnails-anchor" data-details-image="images/movie4.jpg"
-                data-details-title="The Godfather Part II">
+                    data-details-title="The Godfather Part II">
                     <img src="images/movie4.jpg" class="thumbnails-image">
                     <span class="thumbnails-title">Top #4</span>
 
@@ -56,7 +57,7 @@
             </li>
             <li class="thumbnails-item">
                 <a href="#" class="thumbnails-anchor" data-details-image="images/movie5.jpg"
-                data-details-title="12 Angry Men">
+                    data-details-title="12 Angry Men">
                     <img src="images/movie5.jpg" class="thumbnails-image">
                     <span class="thumbnails-title">Top #5</span>
 
@@ -64,7 +65,7 @@
             </li>
             <li class="thumbnails-item">
                 <a href="#" class="thumbnails-anchor" data-details-image="images/movie6.jpg"
-                data-details-title="Schindler's List">
+                    data-details-title="Schindler's List">
                     <img src="images/movie6.jpg" class="thumbnails-image">
                     <span class="thumbnails-title">Top #6</span>
 
@@ -72,7 +73,7 @@
             </li>
             <li class="thumbnails-item">
                 <a href="#" class="thumbnails-anchor" data-details-image="images/movie7.jpg"
-                data-details-title="The Lord of the Rings">
+                    data-details-title="The Lord of the Rings">
                     <img src="images/movie7.jpg" class="thumbnails-image">
                     <span class="thumbnails-title">Top #7</span>
 
@@ -80,7 +81,7 @@
             </li>
             <li class="thumbnails-item">
                 <a href="#" class="thumbnails-anchor" data-details-image="images/movie8.jpg"
-                data-details-title="Pulp Fiction">
+                    data-details-title="Pulp Fiction">
                     <img src="images/movie8.jpg" class="thumbnails-image">
                     <span class="thumbnails-title">Top #8</span>
 
@@ -88,7 +89,7 @@
             </li>
             <li class="thumbnails-item">
                 <a href="#" class="thumbnails-anchor" data-details-image="images/movie9.jpg"
-                data-details-title="The Lord of the Rings">
+                    data-details-title="The Lord of the Rings">
                     <img src="images/movie9.jpg" class="thumbnails-image">
                     <span class="thumbnails-title">Top #9</span>
 
@@ -96,7 +97,7 @@
             </li>
             <li class="thumbnails-item">
                 <a href="#" class="thumbnails-anchor" data-details-image="images/movie10.jpg"
-                data-details-title="Good, Bad, Ugly">
+                    data-details-title="Good, Bad, Ugly">
                     <img src="images/movie10.jpg" class="thumbnails-image">
                     <span class="thumbnails-title">Top #10</span>
 
@@ -104,7 +105,7 @@
             </li>
             <li class="thumbnails-item">
                 <a href="#" class="thumbnails-anchor" data-details-image="images/movie11.jpg"
-                data-details-title="Forrest Gump">
+                    data-details-title="Forrest Gump">
                     <img src="images/movie11.jpg" class="thumbnails-image">
                     <span class="thumbnails-title">Top #11</span>
 
@@ -112,7 +113,7 @@
             </li>
             <li class="thumbnails-item">
                 <a href="#" class="thumbnails-anchor" data-details-image="images/movie12.jpg"
-                data-details-title="Fight Club">
+                    data-details-title="Fight Club">
                     <img src="images/movie12.jpg" class="thumbnails-image">
                     <span class="thumbnails-title">Top #12</span>
 
@@ -120,7 +121,7 @@
             </li>
             <li class="thumbnails-item">
                 <a href="#" class="thumbnails-anchor" data-details-image="images/movie13.jpg"
-                data-details-title="Inception">
+                    data-details-title="Inception">
                     <img src="images/movie13.jpg" class="thumbnails-image">
                     <span class="thumbnails-title">Top #13</span>
 
@@ -128,7 +129,7 @@
             </li>
             <li class="thumbnails-item">
                 <a href="#" class="thumbnails-anchor" data-details-image="images/movie14.jpg"
-                data-details-title="The Lord of Rings">
+                    data-details-title="The Lord of Rings">
                     <img src="images/movie14.jpg" class="thumbnails-image">
                     <span class="thumbnails-title">Top #14</span>
 
@@ -136,7 +137,7 @@
             </li>
             <li class="thumbnails-item">
                 <a href="#" class="thumbnails-anchor" data-details-image="images/movie15.jpg"
-                data-details-title="The Star Wars">
+                    data-details-title="The Star Wars">
                     <img src="images/movie15.jpg" class="thumbnails-image">
                     <span class="thumbnails-title">Top #15</span>
 
@@ -144,7 +145,7 @@
             </li>
             <li class="thumbnails-item">
                 <a href="#" class="thumbnails-anchor" data-details-image="images/movie16.jpg"
-                data-details-title="The Matrix">
+                    data-details-title="The Matrix">
                     <img src="images/movie16.jpg" class="thumbnails-image">
                     <span class="thumbnails-title">Top #16</span>
 
