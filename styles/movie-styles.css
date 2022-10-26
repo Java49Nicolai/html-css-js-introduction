@@ -63,6 +63,7 @@ body {
    align-items: center;
    margin-bottom: 10vh;
    position: relative;
+   transition: 5s ease-in;
 
 }
 .hidden .details-container {
@@ -155,6 +156,10 @@ body {
    transform: scale(1.1);
    margin-left: 1vw;
 }
+.is-point {
+   transform: scale(0.001);
+   transition: 0s;
+}
 
 @media(min-width: 560px) {
    :root {
@@ -196,7 +201,7 @@ body {
 
    .details-image {
       width: 25vw;
-      height: 35vw;
+      height: 32vw;
 
    }
 
@@ -218,10 +223,10 @@ body {
       .thumbnails-list {
          padding-right: 2vw;
          margin-top: 2.5vh;
-         max-height: 86vh;
+         
       }
       .hidden .thumbnails-list {
-         max-height: 80vh;
+         max-height: 70vh;
          margin-top: 3vh;
       }
 
@@ -234,7 +239,7 @@ body {
          margin-right: 5vw;
       }
 
-
+      
 
       .details-title {
          font-size: 1.5em;
@@ -244,8 +249,9 @@ body {
 
       .details-image {
          width: 25vw;
-         height: 35vw;
+         height: 32vw;
       }
+
 
    }
 
