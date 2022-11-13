@@ -7,11 +7,9 @@ function checkTeudatZehut (teudatStrNumber) {
             let oddsIndex = element * 2;
 
             if(oddsIndex > 9) {
-                let num1 = oddsIndex % 10;
-                let num2 = Math.trunc(oddsIndex / 10);
-                oddsIndex = num1 + num2;
+               oddsIndex = oddsIndex % 10 + Math.trunc(oddsIndex / 10);
             }
-            sum = sum += oddsIndex;
+            sum += oddsIndex;
         
         } else {
             sum += parseInt(element);
@@ -20,5 +18,6 @@ function checkTeudatZehut (teudatStrNumber) {
     })
     return sum % 10 == 0 ? console.log(true) : console.log(false);
 }
-checkTeudatZehut("123456782");
 checkTeudatZehut("338473178");
+checkTeudatZehut("336273172");
+
